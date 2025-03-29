@@ -95,11 +95,11 @@ public class SlimeController : MonoBehaviour
         currentLaserLength = Mathf.Clamp(currentLaserLength, laserStartLength, maxDirectionModifier);
         currentDirectionModifier = Mathf.Clamp(currentDirectionModifier, 1, maxDirectionModifier);
 
-        float horizontalInput = Input.GetAxis("Joystick horizontal");
-        float verticalInput = Input.GetAxis("Joystick vertical");
-        jumpDirection = new Vector3(-horizontalInput, 0, verticalInput).normalized;
+        float horizontalInput = Input.GetAxis("Joystick horizontal"); //todo: WHAT THE HELL
+        float verticalInput = -Input.GetAxis("Joystick vertical");
+        jumpDirection = new Vector3(-horizontalInput, 0, -verticalInput).normalized; 
 
-        Vector3 lineDirection = new Vector3(horizontalInput, 0, -verticalInput).normalized;
+        Vector3 lineDirection = new Vector3(horizontalInput, 0, verticalInput).normalized;
         directionRenderer.SetPosition(1, lineDirection * (currentLaserLength / 2)); //tweak to match distance jumped?
         directionRenderer.enabled = true;
     }
