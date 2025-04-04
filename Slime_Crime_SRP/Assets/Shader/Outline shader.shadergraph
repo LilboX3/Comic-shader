@@ -1139,8 +1139,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 1796.000244140625,
-            "y": 711.0000610351563
+            "x": 1805.9998779296875,
+            "y": 710.9999389648438
         },
         "m_Blocks": [
             {
@@ -1510,7 +1510,7 @@
     "m_ObjectId": "1130c41580834977911b41e45f6a1f4b",
     "m_Version": 0,
     "m_fullscreenMode": 0,
-    "m_BlendMode": 0,
+    "m_BlendMode": 2,
     "m_SrcColorBlendMode": 0,
     "m_DstColorBlendMode": 1,
     "m_ColorBlendOperation": 0,
@@ -3447,10 +3447,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
+            "x": 1797.0,
+            "y": 735.9999389648438,
+            "width": 199.9998779296875,
+            "height": 41.0
         }
     },
     "m_Slots": [
