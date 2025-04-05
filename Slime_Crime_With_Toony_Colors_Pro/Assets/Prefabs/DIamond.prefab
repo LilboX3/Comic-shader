@@ -147,9 +147,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7f873f82097e0cd459889eed13d815ba, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: c942d41f52344754293cddcc0d6f22ce, type: 2}
+      objectReference: {fileID: 2100000, guid: 12fef5c69b8584c44a857ce577e3360d, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f873f82097e0cd459889eed13d815ba, type: 3}
       propertyPath: m_Name
       value: DIamond
@@ -234,6 +234,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
