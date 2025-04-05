@@ -78,13 +78,17 @@ MonoBehaviour:
   minJumpForce: 2
   maxJumpForce: 4
   chargeSpeed: 4
+  health: 3
   directionRenderer: {fileID: 8462366242231511772}
   laserWidth: 0.1
   laserStartLength: 0.5
   directionModifierSpeed: 3
   maxDirectionModifier: 3
-  score: 0
-  currentDirectionModifier: 0
+  respawnPoints: []
+  gameManager: {fileID: 0}
+  jumpSounds: []
+  damagedSound: {fileID: 0}
+  isInTutorial: 0
 --- !u!1 &6425156187616945582
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,6 +147,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -218,6 +225,9 @@ LineRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -312,6 +322,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8168345745965934634}
     m_Modifications:
+    - target: {fileID: 4643577701059586711, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bbe7bb8394f65684b845479eccb49fbe, type: 2}
     - target: {fileID: 6216532115693788942, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.32110858
@@ -378,7 +392,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1434556562939266122
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -392,6 +406,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
