@@ -15,9 +15,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial Screen.unity
     guid: 267b2669ff6f77447ade79250c2aa288
   - enabled: 1
+    path: Assets/Scenes/Level Copy.unity
+    guid: 07507700228329b42ba54e3aeab2571a
+  - enabled: 0
     path: Assets/Scenes/Actual Level.unity
     guid: 7fe2c56eafec83c4cb593cd6e21bda0d
   - enabled: 1
     path: Assets/Scenes/End Screen.unity
     guid: 08c5c915c6d256b4399c3fd60a8aa7b6
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
