@@ -30,7 +30,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SketchTexture:
         m_Texture: {fileID: 2800000, guid: 74f40e2117b2f334083f0f1bbbe11df1, type: 3}
-        m_Scale: {x: 10, y: 10}
+        m_Scale: {x: 20, y: 20}
         m_Offset: {x: 0, y: 0}
     - _StylizedThreshold:
         m_Texture: {fileID: 0}
@@ -42,10 +42,10 @@ Material:
     - _NormalsUVType: 0
     - _OutlineWidth: 1
     - _RampSmoothing: 0.001
-    - _RampThreshold: 0.5
+    - _RampThreshold: 0.01
     - _ReceiveShadowsOff: 1
-    - _SketchMax: 0.402
-    - _SketchMin: 0.247
+    - _SketchMax: 0.748
+    - _SketchMin: 0.64
     - _SketchTexture_OffsetSpeed: 1
     - __dummy__: 0
     m_Colors:
