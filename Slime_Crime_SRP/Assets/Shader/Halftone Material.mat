@@ -43,6 +43,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _C_Rotation: 15
+    - _Contrast: 5
     - _Dot_Scale: 194
     - _Dot_Size: 0.6
     - _K_Rotation: 75
