@@ -16,7 +16,7 @@ MonoBehaviour:
   outlineInjectionPoint: 550
   halftoneInjectionPoint: 600
   outlineMaterial: {fileID: 2100000, guid: 681347cda898d2f4f842e17a240b0938, type: 2}
-  halftoneMaterial: {fileID: 2100000, guid: cf2dee191f8f6894087070f2c358d5a8, type: 2}
+  halftoneMaterial: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

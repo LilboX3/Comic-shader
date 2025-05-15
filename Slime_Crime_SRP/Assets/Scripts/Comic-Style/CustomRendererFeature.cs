@@ -14,13 +14,6 @@ public class CustomRendererFeature : ScriptableRendererFeature
         const string m_OutlinePassName = "OutlineEffectPass";
         Material m_OutlineMaterial;
 
-        // This class stores the data needed by the RenderGraph pass.
-        // It is passed as a parameter to the delegate function that executes the RenderGraph pass.
-        private class PassData
-        {
-            //Any additional data that the pass might have to access. Not needed here
-        }
-
         public void SetUp(Material outlineMat)
         {
             m_OutlineMaterial = outlineMat;
@@ -137,16 +130,16 @@ public class CustomRendererFeature : ScriptableRendererFeature
     // This method is called when setting up the renderer once per-camera.
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
-        if(outlineMaterial == null || halftoneMaterial == null)
+        if(outlineMaterial != null)
         {
-            Debug.LogWarning($"Outline and halftone Materials must be set. Skipping");
-            return;
+            m_ScriptableOutlinePass.SetUp(outlineMaterial);
+            renderer.EnqueuePass(m_ScriptableOutlinePass);
         }
 
-        m_ScriptableOutlinePass.SetUp(outlineMaterial);
-        renderer.EnqueuePass(m_ScriptableOutlinePass);
-
-        m_ScriptableHalftonePass.SetUp(halftoneMaterial);
-        renderer.EnqueuePass(m_ScriptableHalftonePass);
+        if (halftoneMaterial != null)
+        {
+            m_ScriptableHalftonePass.SetUp(halftoneMaterial);
+            renderer.EnqueuePass(m_ScriptableHalftonePass);
+        }
     }
 }
